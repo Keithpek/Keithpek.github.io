@@ -1,11 +1,16 @@
 ---
-title: "temp_website"
+title: "Keithpek website"
 ---
+::: {style="float:left; position: relative; top: 0px"}
+![](img/keith_pic.jpeg){width="25%" height="25%" style="margin-right: 10px; align: left"}
+:::
+I am Keith, an undergraduate student at the Singapore Institute of Technology, studying the **Bachelor of Science in Applied Artificial Intelligence**. I am interested in the field of *AI and machine learning*, as well as *data science and data analysis*, and I am currently learning R and other languages to improve my skills in these areas.
+<br>
+<br>
+I love taking on challenging tasks that makes me think.
+*Machine Learning and Deep Learning* are the key focus in my journey within information technology. 
+I strive to gain more skills and knowledge and become a Data Scientist or Machine Learning Engineer.
+<br>
+<br>
+If you are interested, visit my [portfolio](https://keithpek.wixsite.com/portfolio)
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```

@@ -2,15 +2,78 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "temp_website",
+    "title": "Keithpek website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I am Keith, an undergraduate student at the Singapore Institute of Technology, studying the Bachelor of Science in Applied Artificial Intelligence. I am interested in the field of AI and machine learning, as well as data science and data analysis, and I am currently learning R and other languages to improve my skills in these areas.   I love taking on challenging tasks that makes me think. Machine Learning and Deep Learning are the key focus in my journey within information technology. I strive to gain more skills and knowledge and become a Data Scientist or Machine Learning Engineer.   If you are interested, visit my portfolio"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Food Classifier Project",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This is a simple deep learning project which utilises sequential models to classify food images. The project’s objective was to build and develop food classification models in order to recognise, identify and classify 10 different types of food. The approach I took was to create and compare 2 models, and use the one with better results to classify the food images.\n\nPreparation\nUsing an image dataset downloaded from Kaggle, I took the first 1000 images within and split them up into 3 different directories, these being train / test / validation, with 75% of them allocated into train for further use during model training.\n\n\nFirst Model (CONV2D/DENSE)\nThis model was built with 4 convolutional layers with increasing amount of filters per layer, using relu for all but softmax for the last. Afterwards, the model is compiled, fitted with rescaled training/testing images and trained. I then decide to regularize my model via tuning its hyperparameters, adding l2 regularizers and adjusting the values for compiling and fitting.\n\n\nSecond Model (Pre-trained)\nThis model utilises the pre-trained DenseNet121 model, to which flatten and dense layers were added, where the activation function for layers are similar to model 1. The model base was set to be untrainable so that only the layers I added will be trained. Similarly, the model is compiled, fitted and trained. I then added dense layers with l2 regularizers to the model and retrained it for better results.\n\n\nEvaluation\nHaving built 2 models and 2 more regularized models, I went on to evaluate and compare these models’ test accuracies. The model with the highest accuracy was chosen to perform the task of food image classification.\n\n\nClassification (Deviled eggs)\nLoading in the model I chosen alongside the food list on-hand, I written out functions that allows my prediction of the food image that I input using the model selected. All of which returned a 90% accuracy, with only 1 food image not being classified properly."
+  },
+  {
+    "objectID": "fcproject.html",
+    "href": "fcproject.html",
+    "title": "Food Classifier Project",
+    "section": "",
+    "text": "This is a simple deep learning project which utilises sequential models to classify food images. The project’s objective was to build and develop food classification models in order to recognise, identify and classify 10 different types of food. The approach I took was to create and compare 2 models, and use the one with better results to classify the food images."
+  },
+  {
+    "objectID": "fcproject.html#preparation",
+    "href": "fcproject.html#preparation",
+    "title": "Food Classifier Project",
+    "section": "Preparation",
+    "text": "Preparation\nUsing an image dataset downloaded from Kaggle, I took the first 1000 images within and split them up into 3 different directories, these being train / test / validation, with 75% of them allocated into train for further use during model training."
+  },
+  {
+    "objectID": "fcproject.html#first-model-conv2ddense",
+    "href": "fcproject.html#first-model-conv2ddense",
+    "title": "Food Classifier Project",
+    "section": "First Model (CONV2D/DENSE)",
+    "text": "First Model (CONV2D/DENSE)\nThis model was built with 4 convolutional layers with increasing amount of filters per layer, using relu for all but softmax for the last. Afterwards, the model is compiled, fitted with rescaled training/testing images and trained. I then decide to regularize my model via tuning its hyperparameters, adding l2 regularizers and adjusting the values for compiling and fitting."
+  },
+  {
+    "objectID": "fcproject.html#second-model-pre-trained",
+    "href": "fcproject.html#second-model-pre-trained",
+    "title": "Food Classifier Project",
+    "section": "Second Model (Pre-trained)",
+    "text": "Second Model (Pre-trained)\nThis model utilises the pre-trained DenseNet121 model, to which flatten and dense layers were added, where the activation function for layers are similar to model 1. The model base was set to be untrainable so that only the layers I added will be trained. Similarly, the model is compiled, fitted and trained. I then added dense layers with l2 regularizers to the model and retrained it for better results."
+  },
+  {
+    "objectID": "fcproject.html#evaluation",
+    "href": "fcproject.html#evaluation",
+    "title": "Food Classifier Project",
+    "section": "Evaluation",
+    "text": "Evaluation\nHaving built 2 models and 2 more regularized models, I went on to evaluate and compare these models’ test accuracies. The model with the highest accuracy was chosen to perform the task of food image classification."
+  },
+  {
+    "objectID": "fcproject.html#classification-deviled-eggs",
+    "href": "fcproject.html#classification-deviled-eggs",
+    "title": "Food Classifier Project",
+    "section": "Classification (Deviled eggs)",
+    "text": "Classification (Deviled eggs)\nLoading in the model I chosen alongside the food list on-hand, I written out functions that allows my prediction of the food image that I input using the model selected. All of which returned a 90% accuracy, with only 1 food image not being classified properly."
+  },
+  {
+    "objectID": "curriculum.html",
+    "href": "curriculum.html",
+    "title": "curriculum",
+    "section": "",
+    "text": "I am in the Singapore Institute of Technology (SIT) Dragon Boat team, and recently we managed to win the first place in our division during the Singapore Dragon Boat Association (SDBA) Century Race. It is a very proud moment for our team as the competition was tough."
+  },
+  {
+    "objectID": "reflection.html",
+    "href": "reflection.html",
+    "title": "Reflection on the use of GenAI",
+    "section": "",
+    "text": "I have used the GenAI tool, DeepSeek, to assist in the development of this document. The tool has been helpful in generating content pertaining to the stylising of the document, as well as providing suggestions for the structure and layout. The tool has also been useful in generating code snippets and examples to illustrate key points. Github copilot has also been helpful in giving suggestions for code snippets and examples, giving me insights on what content to add in for this quarto site. While GenAI tools are helpful in teaching and guiding me through processes, I believe that over reliance on it is detrimental to my learning experience and it should be used sparingly to learn and not to steal or copy answers directly."
+  },
+  {
+    "objectID": "reflection.html#genai-tools-assistance",
+    "href": "reflection.html#genai-tools-assistance",
+    "title": "Reflection on the use of GenAI",
+    "section": "GenAI tools assistance",
+    "text": "GenAI tools assistance\nWhile GenAI tools are helpful in teaching and guiding me through processes, I believe that over reliance on it is detrimental to my learning experience and it should be used sparingly to learn and not to steal or copy answers directly."
   }
 ]

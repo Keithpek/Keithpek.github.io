@@ -1,0 +1,25 @@
+---
+title: "Food Classifier Project"
+---
+
+This is a simple deep learning project which utilises sequential models to classify food images. The project's objective was to build and develop food classification models in order to recognise, identify and classify 10 different types of food. The approach I took was to create and compare 2 models, and use the one with better results to classify the food images.
+
+## Preparation
+Using an image dataset downloaded from Kaggle, I took the first 1000 images within and split them up into 3 different directories, these being train / test / validation, with 75% of them allocated into train for further use during model training.
+
+## First Model (CONV2D/DENSE)
+This model was built with 4 convolutional layers with increasing amount of filters per layer, using relu for all but softmax for the last. Afterwards, the model is compiled, fitted with rescaled training/testing images and trained.
+I then decide to regularize my model via tuning its hyperparameters, adding l2 regularizers and adjusting the values for compiling and fitting.
+
+## Second Model (Pre-trained)
+This model utilises the pre-trained DenseNet121 model, to which flatten and dense layers were added, where the activation function for layers are similar to model 1. 
+The model base was set to be untrainable so that only the layers I added will be trained. Similarly, the model is compiled, fitted and trained.
+I then added dense layers with l2 regularizers to the model and retrained it for better results.
+
+## Evaluation
+Having built 2 models and 2 more regularized models, I went on to evaluate and compare these models' test accuracies. 
+The model with the highest accuracy was chosen to perform the task of food image classification.
+
+## Classification (Deviled eggs)
+Loading in the model I chosen alongside the food list on-hand, I written out functions that allows my prediction of the food image that I input using the model selected.
+All of which returned a 90% accuracy, with only 1 food image not being classified properly.

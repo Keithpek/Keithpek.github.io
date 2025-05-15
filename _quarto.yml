@@ -3,20 +3,31 @@ project:
   output-dir: docs
 
 website:
-  title: "temp_website"
+  title: "Keithpek website"
+  description: "My personal website showcasing my projects and curriculum."
+  favicon: favicon.ico
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: fcproject.qmd
+        text: Food classifier Project
+      - href: curriculum.qmd
+        text: Curriculum
+      - href: reflection.qmd
+        text: Reflection
 
 format:
   html:
     theme:
-      - cosmo
+      - lux
       - brand
     css: styles.css
     toc: true
+    toc-depth: 3
+    toc-location: left
+    page-layout: article
+    
 
 
 

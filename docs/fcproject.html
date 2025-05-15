@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -93,8 +94,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
-<span class="menu-text">Food Classifier Project</span></a>
+    <a class="nav-link active" href="./fcproject.html" aria-current="page"> 
+<span class="menu-text">Food classifier Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./curriculum.html"> 
+<span class="menu-text">Curriculum</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./reflection.html"> 
+<span class="menu-text">Reflection</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -104,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
@@ -124,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -133,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -146,24 +155,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This is a simple deep learning project which utilises sequential models to classify food images. The project’s objective was to build and develop food classification models in order to recognise, identify and classify 10 different types of food. The approach I took was to create and compare 2 models, and use the one with better results to classify the food images.</p>
-<section id="preparation" class="level1">
-<h1>Preparation</h1>
+<section id="preparation" class="level2">
+<h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <p>Using an image dataset downloaded from Kaggle, I took the first 1000 images within and split them up into 3 different directories, these being train / test / validation, with 75% of them allocated into train for further use during model training.</p>
 </section>
-<section id="first-model-conv2ddense" class="level1">
-<h1>First Model (CONV2D/DENSE)</h1>
+<section id="first-model-conv2ddense" class="level2">
+<h2 class="anchored" data-anchor-id="first-model-conv2ddense">First Model (CONV2D/DENSE)</h2>
 <p>This model was built with 4 convolutional layers with increasing amount of filters per layer, using relu for all but softmax for the last. Afterwards, the model is compiled, fitted with rescaled training/testing images and trained. I then decide to regularize my model via tuning its hyperparameters, adding l2 regularizers and adjusting the values for compiling and fitting.</p>
 </section>
-<section id="second-model-pre-trained" class="level1">
-<h1>Second Model (Pre-trained)</h1>
+<section id="second-model-pre-trained" class="level2">
+<h2 class="anchored" data-anchor-id="second-model-pre-trained">Second Model (Pre-trained)</h2>
 <p>This model utilises the pre-trained DenseNet121 model, to which flatten and dense layers were added, where the activation function for layers are similar to model 1. The model base was set to be untrainable so that only the layers I added will be trained. Similarly, the model is compiled, fitted and trained. I then added dense layers with l2 regularizers to the model and retrained it for better results.</p>
 </section>
-<section id="evaluation" class="level1">
-<h1>Evaluation</h1>
+<section id="evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation">Evaluation</h2>
 <p>Having built 2 models and 2 more regularized models, I went on to evaluate and compare these models’ test accuracies. The model with the highest accuracy was chosen to perform the task of food image classification.</p>
 </section>
-<section id="classification-deviled-eggs" class="level1">
-<h1>Classification (Deviled eggs)</h1>
+<section id="classification-deviled-eggs" class="level2">
+<h2 class="anchored" data-anchor-id="classification-deviled-eggs">Classification (Deviled eggs)</h2>
 <p>Loading in the model I chosen alongside the food list on-hand, I written out functions that allows my prediction of the food image that I input using the model selected. All of which returned a 90% accuracy, with only 1 food image not being classified properly.</p>
 
 

@@ -1,0 +1,8 @@
+---
+title: "Reflection on the use of GenAI"
+format: html
+---
+
+I have used the GenAI tool, DeepSeek, to assist in the development of this document. The tool has been helpful in generating content pertaining to the stylising of the document, as well as providing suggestions for the structure and layout. The tool has also been useful in generating code snippets and examples to illustrate key points.
+Github copilot has also been helpful in giving suggestions for code snippets and examples, giving me insights on what content to add in for this quarto site.
+While GenAI tools are helpful in teaching and guiding me through processes, I believe that over reliance on it is detrimental to my learning experience and it should be used sparingly to learn and not to steal or copy answers directly.

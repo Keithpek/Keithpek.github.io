@@ -1,0 +1,8 @@
+---
+title: "curriculum"
+format: html
+---
+
+I am in the Singapore Institute of Technology (SIT) Dragon Boat team, and recently we managed to win the first place in our division during the Singapore Dragon Boat Association (SDBA) Century Race. It is a very proud moment for our team as the competition was tough.
+
+<img src="img/DB_century.jpeg" alt="Century Race" width="100%" height="100%">

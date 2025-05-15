@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Food Classifier Project – Keithpek website</title>
+<title>curriculum – Keithpek website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -93,8 +94,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
-<span class="menu-text">Food Classifier Project</span></a>
+    <a class="nav-link" href="./fcproject.html"> 
+<span class="menu-text">Food classifier Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./curriculum.html" aria-current="page"> 
+<span class="menu-text">Curriculum</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./reflection.html"> 
+<span class="menu-text">Reflection</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -107,17 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a></li>
-  <li><a href="#first-model-conv2ddense" id="toc-first-model-conv2ddense" class="nav-link" data-scroll-target="#first-model-conv2ddense">First Model (CONV2D/DENSE)</a></li>
-  <li><a href="#second-model-pre-trained" id="toc-second-model-pre-trained" class="nav-link" data-scroll-target="#second-model-pre-trained">Second Model (Pre-trained)</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
-  <li><a href="#classification-deviled-eggs" id="toc-classification-deviled-eggs" class="nav-link" data-scroll-target="#classification-deviled-eggs">Classification (Deviled eggs)</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -128,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Food Classifier Project</h1>
+<h1 class="title">curriculum</h1>
 </div>
 
 
@@ -145,29 +144,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a simple deep learning project which utilises sequential models to classify food images. The project’s objective was to build and develop food classification models in order to recognise, identify and classify 10 different types of food. The approach I took was to create and compare 2 models, and use the one with better results to classify the food images.</p>
-<section id="preparation" class="level1">
-<h1>Preparation</h1>
-<p>Using an image dataset downloaded from Kaggle, I took the first 1000 images within and split them up into 3 different directories, these being train / test / validation, with 75% of them allocated into train for further use during model training.</p>
-</section>
-<section id="first-model-conv2ddense" class="level1">
-<h1>First Model (CONV2D/DENSE)</h1>
-<p>This model was built with 4 convolutional layers with increasing amount of filters per layer, using relu for all but softmax for the last. Afterwards, the model is compiled, fitted with rescaled training/testing images and trained. I then decide to regularize my model via tuning its hyperparameters, adding l2 regularizers and adjusting the values for compiling and fitting.</p>
-</section>
-<section id="second-model-pre-trained" class="level1">
-<h1>Second Model (Pre-trained)</h1>
-<p>This model utilises the pre-trained DenseNet121 model, to which flatten and dense layers were added, where the activation function for layers are similar to model 1. The model base was set to be untrainable so that only the layers I added will be trained. Similarly, the model is compiled, fitted and trained. I then added dense layers with l2 regularizers to the model and retrained it for better results.</p>
-</section>
-<section id="evaluation" class="level1">
-<h1>Evaluation</h1>
-<p>Having built 2 models and 2 more regularized models, I went on to evaluate and compare these models’ test accuracies. The model with the highest accuracy was chosen to perform the task of food image classification.</p>
-</section>
-<section id="classification-deviled-eggs" class="level1">
-<h1>Classification (Deviled eggs)</h1>
-<p>Loading in the model I chosen alongside the food list on-hand, I written out functions that allows my prediction of the food image that I input using the model selected. All of which returned a 90% accuracy, with only 1 food image not being classified properly.</p>
+<p>I am in the Singapore Institute of Technology (SIT) Dragon Boat team, and recently we managed to win the first place in our division during the Singapore Dragon Boat Association (SDBA) Century Race. It is a very proud moment for our team as the competition was tough.</p>
+<p><img src="img/DB_century.jpeg" alt="Century Race" width="100%" height="100%"></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
